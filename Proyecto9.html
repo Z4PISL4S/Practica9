@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades en JS</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <button onclick="this.innerHTML = moment().add(10, 'days').calendar();   ">La fecha mas 10 dias es?</button>
+    <script src="js/index.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+
+    <button onclick="document.getElementById('demo').innerHTML = Date()">La hora es:</button>
+   <ip id="demo"></ip>
+
+   <ul>
+   <button onclick="document.querySelector('.valor').innerHTML = 'Cuatro'">Cambia el valor</button>
+
+    <button onclick="document.querySelector('.valor').innerHTML = ' 🍎 '">Cambiar Emoji</button>
+
+        <li class="valor">🍎</li>
+        <li class="valor">🍌</li>
+        <li class="valor">🍇</li>   
+    </ul>
+</body>
+</html>
